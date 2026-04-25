@@ -22,19 +22,8 @@
 &kp TAB         &kp Q   &kp W   &kp E         &kp R         &kp T     &kp Y          &kp U      &kp I      &kp O    &kp P      &kp BACKSPACE
 &kp LEFT_SHIFT  &kp A   &kp S   &kp D         &kp F         &kp G     &kp H          &kp J      &kp K      &kp L    &kp SEMI   &kp RIGHT_SHIFT
 &kp LCTRL       &kp Z   &kp X   &kp C         &kp V         &kp B     &kp N          &kp M      &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_CONTROL
-                                &kp LEFT_WIN  &kp SPACE     &mo 1     &mo 2          &kp ENTER
+                                &kp LEFT_WIN  &kp SPACE     &mo 2     &mo 1          &kp ENTER
                                               &kp LEFT_ALT  &mo 3     &kp RIGHT_ALT
-            >;
-        };
-
-        arrow {
-            bindings = <
-&none   &none   &none   &none         &none      &none               &none              &none     &none     &none      &none        &none
-&trans  &kp N1  &kp N2  &kp N3        &kp N4     &none               &none              &none     &none     &none      &none        &trans
-&trans  &kp N5  &kp N6  &kp N7        &kp N8     &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp HOME  &kp UP    &kp END    &kp PAGE_UP  &trans
-&trans  &kp N9  &kp N0  &kp MINUS     &kp EQUAL  &kp GRAVE           &kp BACKSLASH      &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN    &trans
-                        &kp LEFT_WIN  &none      &trans              &mo 5              &none
-                                      &none      &none               &none
             >;
         };
 
@@ -49,12 +38,23 @@
             >;
         };
 
+        arrow {
+            bindings = <
+&none   &none   &none   &none         &none      &none               &none              &none     &none     &none      &none        &none
+&trans  &kp N1  &kp N2  &kp N3        &kp N4     &none               &none              &none     &none     &none      &none        &trans
+&trans  &kp N5  &kp N6  &kp N7        &kp N8     &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp HOME  &kp UP    &kp END    &kp PAGE_UP  &trans
+&trans  &kp N9  &kp N0  &kp MINUS     &kp EQUAL  &kp GRAVE           &kp BACKSLASH      &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN    &trans
+                        &kp LEFT_WIN  &none      &trans              &mo 5              &none
+                                      &none      &none               &none
+            >;
+        };
+
         MOUSE {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none      &none           &none           &none            &none  &none
-&none       &none         &none         &none         &none         &none           &none      &none           &none           &none            &none  &none
-&trans      &none         &mkp MB4      &mkp MCLK     &mkp MB5      &none           &none      &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none  &none
-&trans      &kp LEFT_ALT  &mkp RCLK     &mo 4         &mkp LCLK     &none           &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &bootloader
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none      &none           &none           &none           &none  &none
+&none       &none         &mkp MB4      &mkp MCLK     &mkp MB5      &none           &none      &mkp LCLK       &mmv MOVE_UP    &mkp RCLK       &none  &none
+&trans      &kp LALT      &mkp RCLK     &mo 4         &mkp RCLK     &none           &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_LEFT  &none  &none
+&trans      &none         &none         &none         &none         &none           &none      &none           &none           &none           &none  &bootloader
                                         &none         &none         &none           &mkp LCLK  &mkp RCLK
                                                       &none         &trans          &none
             >;
@@ -62,10 +62,10 @@
 
         mouse-middle {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none      &none           &none           &none            &none  &none
-&none       &none         &none         &none         &none         &none           &none      &none           &none           &none            &none  &none
-&trans      &none         &mkp MB4      &mkp MCLK     &mkp MB5      &none           &none      &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none  &none
-&trans      &kp LEFT_ALT  &mkp RCLK     &trans        &mkp LCLK     &none           &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &bootloader
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none      &none           &none           &none           &none  &none
+&none       &none         &mkp MB4      &mkp MCLK     &mkp MB5      &none           &none      &mkp LCLK       &mmv MOVE_UP    &mkp RCLK       &none  &none
+&trans      &kp LALT      &mkp RCLK     &trans        &mkp RCLK     &none           &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_LEFT  &none  &none
+&trans      &none         &none         &none         &none         &none           &none      &none           &none           &none           &none  &bootloader
                                         &none         &none         &none           &mkp LCLK  &mkp RCLK
                                                       &none         &trans          &none
             >;
