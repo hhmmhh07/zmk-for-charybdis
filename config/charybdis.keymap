@@ -23,7 +23,7 @@
 &kp LEFT_SHIFT  &kp A   &kp S   &kp D         &kp F         &kp G        &kp H      &kp J          &kp K      &kp L    &kp SEMI   &kp RIGHT_SHIFT
 &kp LCTRL       &kp Z   &kp X   &kp C         &kp V         &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_CONTROL
                                 &kp LEFT_WIN  &mo 1         &kp SPACE    &mo 1      &kp RIGHT_ALT
-                                              &kp LEFT_ALT  &mo 4        &kp ENTER
+                                              &kp LEFT_ALT  &mo 0        &kp ENTER
             >;
         };
 
@@ -60,14 +60,14 @@
             >;
         };
 
-        layer_4 {
+        mouse-middle {
             bindings = <
-&none        &none         &none         &none         &none      &none         &none       &none      &none         &none         &none         &none
-&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none      &bt BT_CLR    &bt BT_CLR  &none      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none
-&none        &none         &none         &none         &none      &none         &none       &none      &mkp MCLK     &none         &none         &none
-&bootloader  &none         &none         &trans        &mkp LCLK  &none         &none       &mkp LCLK  &trans        &mkp RCLK     &none         &bootloader
-                                         &none         &mkp LCLK  &mkp RCLK     &mkp RCLK   &mkp LCLK
-                                                       &none      &none         &none
+&none   &none         &none      &none      &none      &none     &none       &none           &none           &none            &none         &none
+&none   &none         &none      &none      &none      &none     &bt BT_CLR  &none           &bt BT_SEL 2    &bt BT_SEL 1     &bt BT_SEL 0  &none
+&trans  &none         &mkp MB4   &mkp MCLK  &mkp MB5   &none     &none       &none           &mmv MOVE_UP    &none            &none         &none
+&trans  &kp LEFT_ALT  &mkp RCLK  &trans     &mkp LCLK  &none     &none       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none         &bootloader
+                                 &none      &none      &none     &none       &none
+                                            &none      &trans    &none
             >;
         };
 
