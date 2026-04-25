@@ -30,9 +30,9 @@
         symbol {
             bindings = <
 &none   &none          &none          &none          &none         &none            &none         &none   &none    &none    &none    &none
-&trans  &kp LS(EXCL)   &kp LS(AT)     &kp LS(POUND)  &kp LS(DLLR)  &none            &none         &kp F1  &kp F2   &kp F3   &kp F4   &trans
-&trans  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(LBRC)     &kp LS(RBRC)  &kp F5  &kp F6   &kp F7   &kp F8   &trans
-&trans  &kp LS(LPAR)   &kp LS(RPAR)   &kp LS(UNDER)  &kp LS(PLUS)  &kp LS(TILDE)    &kp LS(PIPE)  &kp F9  &kp F10  &kp F11  &kp F12  &trans
+&trans  &kp LS(EXCL)   &kp LS(AT)     &kp LS(POUND)  &kp LS(DLLR)  &kp LS(LBRC)     &kp LS(RBRC)  &kp F1  &kp F2   &kp F3   &kp F4   &trans
+&trans  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(DQT)      &kp LS(PIPE)  &kp F5  &kp F6   &kp F7   &kp F8   &trans
+&trans  &kp LS(LPAR)   &kp LS(RPAR)   &kp LS(UNDER)  &kp LS(PLUS)  &kp LS(TILDE)    &kp DEL       &kp F9  &kp F10  &kp F11  &kp F12  &trans
                                       &kp LEFT_WIN   &none         &mo 5            &trans        &none
                                                      &none         &none            &none
             >;
@@ -40,12 +40,12 @@
 
         arrow {
             bindings = <
-&none   &none   &none   &none         &none      &none               &none              &none     &none     &none      &none        &none
-&trans  &kp N1  &kp N2  &kp N3        &kp N4     &none               &none              &none     &none     &none      &none        &trans
-&trans  &kp N5  &kp N6  &kp N7        &kp N8     &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp HOME  &kp UP    &kp END    &kp PAGE_UP  &trans
-&trans  &kp N9  &kp N0  &kp MINUS     &kp EQUAL  &kp GRAVE           &kp BACKSLASH      &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN    &trans
-                        &kp LEFT_WIN  &none      &trans              &mo 5              &none
-                                      &none      &none               &none
+&none   &none   &none   &none         &none      &none        &none       &none     &none     &none      &none      &none
+&trans  &kp N1  &kp N2  &kp N3        &kp N4     &kp LBKT     &kp RBKT    &kp HOME  &kp UP    &kp END    &kp PG_UP  &trans
+&trans  &kp N5  &kp N6  &kp N7        &kp N8     &kp SQT      &kp BSLH    &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans
+&trans  &kp N9  &kp N0  &kp MINUS     &kp EQUAL  &kp GRAVE    &kp DELETE  &none     &none     &none      &none      &trans
+                        &kp LEFT_WIN  &none      &trans       &mo 5       &none
+                                      &none      &none        &none
             >;
         };
 
